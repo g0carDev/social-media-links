@@ -1,0 +1,96 @@
+---
+import SwitchColor from '../components/SwitchColor';
+import Link from '../components/MyLink.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='G0C4R VR - Social Media Links'>
+	<SwitchColor client:load />
+	<main class='py-5 w-full mx-auto lg:w-[740px] flex flex-col items-center text-center'>
+		<div class='w-40 h-40'>
+			<img src='/img/profile-twich.png' alt='gocarvr' class='rounded-full' />
+		</div>
+		<h1
+			class='text-black py-5 text-7xl font-extrabold bg-gradient-to-r from-black/70 dark:from-white via-yellow-500 to-black dark:to-slate-500 text-transparent bg-clip-text'
+		>
+			G<code class='text-[5.2rem]'>0</code>C4R<span class='font-bold text-4xl'>vr</span>
+		</h1>
+		<!-- <h3 class='text-black dark:text-white text-xl'>
+			Desarrollador Web & Creador de Contenido VR. Me encantan los video juegos y creo que la realidad virtual es el
+			futuro del gaming... o no :(
+		</h3> -->
+		<h3
+			class='text-2xl text-balance font-bold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.red.400),theme(colors.red.300),theme(colors.yellow.400),theme(colors.red.400),theme(colors.sky.400),theme(colors.blue.100),theme(colors.red.400))] bg-[length:200%_auto] animate-gradient'
+		>
+			Desarrollador Web & Creador de Contenido VR. Me encantan los video juegos y creo que la realidad virtual es el
+			futuro del gaming... o no :(
+		</h3>
+		<p
+			class='py-5 text-xl text-balance font-bold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.300),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient'
+		>
+			Me puedes conocer más dando click en los siguiente en enlaces.
+		</p>
+		<section>
+			<div class='w-80 sm:w-[470px]'>
+				<Link href='https://www.facebook.com/gocarvr'>Facebook</Link>
+				<Link href='https://www.instagram.com/gocarvr/'>Instagram</Link>
+				<Link href='https://www.twitch.tv/g0c4rvr'>Twitch</Link>
+				<Link href='https://twitter.com/gocarvr'>Twitter</Link>
+				<Link href='https://www.youtube.com/@G0C4R'>Youtube</Link>
+			</div>
+		</section>
+	</main>
+
+	<footer class='w-full mx-auto lg:w-[740px]'>
+		<div class='flex justify-center mt-10 gap-3'>
+			<a
+				rel='noopener noreferrer'
+				target='_blank'
+				href='https://www.linkedin.com/in/jovan-gomez/'
+				class='text-black/80 dark:text-white/80'
+			>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					width='24'
+					height='24'
+					viewBox='0 0 24 24'
+					stroke-width='2'
+					stroke='currentColor'
+					fill='none'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+					><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path
+						d='M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z'></path><path
+						d='M8 11l0 5'></path><path d='M8 8l0 .01'></path><path d='M12 16l0 -5'></path><path
+						d='M16 16v-3a2 2 0 0 0 -4 0'></path></svg
+				>
+			</a>
+			<a rel='noopener noreferrer' target='_blank' href='https://www.g0car.dev/' class='text-black/80 dark:text-white/80'>
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					width='24'
+					height='24'
+					viewBox='0 0 24 24'
+					stroke-width='2'
+					stroke='currentColor'
+					fill='none'
+					stroke-linecap='round'
+					stroke-linejoin='round'
+					><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path
+						d='M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z'></path><path
+						d='M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2'></path><path d='M12 12l0 .01'></path><path
+						d='M3 13a20 20 0 0 0 18 0'></path></svg
+				>
+			</a>
+		</div>
+		<div class='relative'>
+			<p class='text-barcode text-black dark:text-white text-center text-5xl pt-3'>Sigueme</p>
+			<div class='absolute w-full h-5 bg-white dark:bg-slate-900 top-11'></div>
+		</div>
+		<p class='text-black/80 dark:text-white/80 text-center pb-5'>
+			© 2024 <code class='text-lg'>G0C4R</code> - Casi todos los derechos reservados.
+		</p>
+	</footer>
+</Layout>
+
+<style></style>
